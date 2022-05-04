@@ -1,0 +1,127 @@
+.wrapper{
+    margin-left: 0 20px;
+    border: 1px solid transparent;
+    width: 200px;  
+    font-size: 2rem;
+}
+.title{
+    font-weight: bolder;
+    margin: 10px 0;
+}
+.add{
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    height: 20px;
+    margin: 10px 0;
+    width: 60%;
+    padding: 5px;
+}
+div.add:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+.body{
+    display: flex;
+    flex-wrap: wrap;
+    
+    max-width: 100%;
+    font-size: 2rem;
+    margin: 100px;
+}
+.box__content{
+    line-height: 30px;
+    width: 350px;
+    position: relative;
+    left: 20px;
+    border: 2px solid var(--primary-color);
+    padding: 5px;
+    margin: 20px 0;
+    color: var(--text-color);
+    background-color: transparent;
+    padding: 5px;
+    display: none;
+}
+.answer{
+    display: none;
+}
+.box-icon{
+    position: absolute;
+    right:5px;
+    top: 0px;
+    margin-bottom: 10px;
+    background-color: var(--primary-color);
+    color: whitesmoke;
+}
+.box{
+    border: 2px solid var(--primary-color);
+    height: 30px;
+}
+.save{
+    width: 50%;
+    border: 2px solid var(--main-green);
+    color: var(--main-green);
+    padding: 2px;
+    margin: 10px 0;
+    font-size: 1rem;
+    background-color: transparent;
+}
+
+.release{
+    margin: 10px;
+    width: 200px;
+    background-color: white;
+    color: var(--text-color);
+}
+.toggle{
+    color: blue;
+    margin: 10px 0;
+}
+.btn{
+    display: flex;
+    justify-content: space-between; 
+    background-color: transparent;
+}
+.edit {
+    border: 1px solid var(--primary-color);
+    color:var(--primary-color);
+}
+div.edit:hover{
+    background-color: var(--primary-color);
+    color: var(--text-color)
+}
+.del{
+    border: 1px solid var(--main-green);
+    color:var(--main-green);
+}
+div.del:hover{
+    background-color: var(--main-green);
+    color: var(--text-color)
+}
+.msg{
+    background-color: rgb(232, 62, 140, 0.2);
+    width: 80%;
+    display: none;
+    animation: fadeout ease-in 3s;
+}
+@keyframes fadeout {
+    from{
+        opacity: 1
+    }
+    to{
+        opacity: 0
+    }
+}
+
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (max-width: 576px) {
+    .body{
+        display: block
+    }
+    .box__content{
+        width: 100%;
+    }
+ }
+ /*Medium devices (tablets, 768px and up)*/
+ @media (max-width: 768px) { }
